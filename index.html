@@ -1,12 +1,21 @@
 <!DOCTYPE html><!-- Html 5-->
 <html><!-- Html 4-->
 <head>
-	<title>APLICACION 1</title>
+  <title>APLICACION 1</title>
+  <style type="text/css">
+    h1,h2,h3{text-align: center;color: rgb(234,234,234);}
+    #p_principal{background-color: #4bdaea;font-size: 25px;width: 50%;}
+    .c_parrafos{margin: 15px;border-style: dashed; border-size: 12px;background-color: #dc00ff !important;}
+
+    #div1{background-color: #4bdaea;font-size: 25px;width: 500px; height: 23px;}
+    ul.ok { list-style-image: url("ok.png"); }
+  </style>
 </head>
 
 <body>
   
   <!-- Etiquetas de titulo-->
+  <h1 class="ok">Practica1</h1>
   <h1>Titulo H1</h1>
   <h2>Titulo h2</h2>
   <h3>Titulo h3</h3>
@@ -15,12 +24,23 @@
   <h6>Titulo h6</h6>
   
   <!--Parrafos-->
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  <p id="p_principal" class="c_parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+<!--Parrafos-->
+  <p class="c_parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+
+  <div id="div1"></div>
 
   <!--Etiqueta de enfasis, subtitulos o negrita-->
   <strong>Ingeniera Electronica</strong>
@@ -30,18 +50,25 @@
 
   <!--Lista ordenada-->
   <ol>
-  	<!--Item de la lista-->
-  	<li>Gato</li>
-  	<li>Perro</li>
-  	<li>Leon</li>
+    <!--Item de la lista - NUMEROS-->
+    <li>Gato</li>
+    <li>Perro</li>
+    <li>Leon</li>
   </ol>
 
-  <!--Lista no ordenada-->
-  <ul>
-  	<!--Item de la lista-->
-  	<li>Palo</li>
-  	<li>Nevera</li>
-  	<li>Lampara</li>
+  <!--Lista no ordenada - VIÑETAS-->
+  <ul class="ok">
+    <!--Item de la lista-->
+    <li>Palo</li>
+    <li>Nevera</li>
+    <li>Lampara</li>
+  </ul>
+  
+  <ul class="ok">
+    <!--Item de la lista-->
+    <li>Palo</li>
+    <li>Nevera</li>
+    <li>Lampara</li>
   </ul>
 </body>
 </html>
