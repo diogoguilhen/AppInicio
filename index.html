@@ -3,12 +3,54 @@
 <head>
   <title>APLICACION 1</title>
   <style type="text/css">
-    h1,h2,h3{text-align: center;color: rgb(234,234,234);}
+
+    h1,h2,h3{text-align: center;color: rgb(28,8,8); text-shadow: 20px 20px 5px #dc00ff;}
     #p_principal{background-color: #4bdaea;font-size: 25px;width: 50%;}
-    .c_parrafos{margin: 15px;border-style: dashed; border-size: 12px;background-color: #dc00ff !important;}
+   /* .c_parrafos{margin: 15px;border-style: dashed; border-size: 12px;background-color: #dc00ff !important;border-radius: 20px;box-shadow: -20px 10px 5px #aaa;}*/
+  .c_parrafos{margin: 15px;border-style: dashed; border-size: 12px;background-color: #dc00ff !important;border-radius: 20px;box-shadow: inset 0px 0px 40px #E1F5F5, 0px 0px 40px #E3E1E3;}
 
     #div1{background-color: #4bdaea;font-size: 25px;width: 500px; height: 23px;}
     ul.ok { list-style-image: url("ok.png"); }
+    button{min-width: 100px;
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: #ee1133;
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.36);
+    font-size: 14px;
+    padding: 7px 8px;
+    font-family: "adobe-clean", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+    button:hover{
+      background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.15), rgba(255,255,255,0));
+    }
+
+
+    button:active{
+        background: yellow;
+    }
+  
+  #recuadro1{width: 400px ; height: 200px; background: #123; color: white;transition: width 1s, background-color 1s;display: inline-block;}
+  #recuadro1 p {font-size: 10px;}
+
+   #recuadro1:hover{
+      background-color: #faa123;
+      width: 600px;
+    }
+
+    #recuadro2{width: 400px ; height: 200px; background: #123; color: white;transition: width 1s, background-color 1s; display: inline-block;}
+  #recuadro2 p {font-size: 10px;}
+
+   #recuadro2:hover{
+      background-color: #faa123;
+      width: 600px;
+    }
+
+    #recuadro3{left: 30px; position: relative;border-radius: 20px; background-color: blue; width: 200px;height: 100px; -webkit-animation-name: anim1; -webkit-animation-duration: 4s;}
+    @-webkit-keyframes anim1{from{left: 30px;background-color: blue;}to{left: 300px; background-color: yellow;}}
+    #recuadro3:hover{
+      -webkit-animation-play-state: running;
+    }
+
   </style>
 </head>
 
@@ -23,6 +65,8 @@
   <h5>Titulo h5</h5>
   <h6>Titulo h6</h6>
   
+  <button>on</button>
+
   <!--Parrafos-->
   <p id="p_principal" class="c_parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -42,9 +86,29 @@
 
   <div id="div1"></div>
 
+  <div id="recuadro1">
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+  </div>
+
+  <div id="recuadro2">
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+  </div>
+
+
   <!--Etiqueta de enfasis, subtitulos o negrita-->
-  <strong>Ingeniera Electronica</strong>
+  <strong style="overflow: none">Ingeniera Electronica</strong>
   
+
   <!--Enlace a otra pagina-->
   <a href="http://www.google.com">Ir a Google</a>
 
@@ -63,12 +127,21 @@
     <li>Nevera</li>
     <li>Lampara</li>
   </ul>
-  
+
   <ul class="ok">
     <!--Item de la lista-->
     <li>Palo</li>
     <li>Nevera</li>
     <li>Lampara</li>
   </ul>
+
+  <div id="recuadro3">
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+  </div>
 </body>
 </html>
